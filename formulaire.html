@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="agenda.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <title>Formulaire</title>
+  </head>
+  <body>
+
+<section>
+
+    <header>
+
+          <p>Formulaire</p>
+    </header>
+
+    <form method="post">
+
+       <fieldset>
+           <legend><h1>Nouvel élément</h1></legend>
+
+           <label for="nom">Titre</label>
+           <input type="text" name="nom" id="nom" />
+
+           <label for="prenom">jj/mm/année</label>
+           <input type="text" name="prenom" id="prenom" />
+
+           <label for="email">Rappel du rendez vous</label>
+           <input type="email" name="email" id="email" />
+
+       </fieldset>
+
+       <fieldset>
+           <legend><h1>Compléments</h1></legend>
+
+           <p>
+               Où ajouter ce nouvel évènement :
+
+               <input type="radio" name="Agenda boulot" /> <label for="Agenda Boulot">Agenda boulot</label>
+               <input type="radio" name="Agenda perso" /> <label for="Agenda Perso">Agenda Perso</label>
+               <input type="radio" name="Pour les courses" /> <label for="intelligent"><strong>Pour les courses</strong></label>
+               <input type="radio" name="Autre..."/> <label for="autre">Autre...</label>
+           </p>
+
+           <p>
+               <label for="precisions">Description si besoin:</label>
+               <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+           </p>
+       </fieldset>
+    </form>
+    </section>
+
+  </body>
+</html>
